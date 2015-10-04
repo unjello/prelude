@@ -22,8 +22,7 @@
               ("NEXT" ("WAITING") ("CANCELLED") ("HOLD"))
               ("DONE" ("WAITING") ("CANCELLED") ("HOLD")))))
 
-;; for some reason the setq above stops working if moved to add-hook dsa d
-;; TODO: apply only to org-mode
+;; do line wrapping for org-mode and disable long-lines hilighting
 (add-hook 'org-mode-hook (lambda()
                            (whitespace-mode -1)
                            (visual-line-mode)
