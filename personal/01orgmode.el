@@ -19,3 +19,11 @@
               ("TODO" ("WAITING") ("CANCELLED") ("HOLD"))
               ("NEXT" ("WAITING") ("CANCELLED") ("HOLD"))
               ("DONE" ("WAITING") ("CANCELLED") ("HOLD")))))
+(setq whitespace-global-modes '(not org-mode))
+
+;; for some reason the setq above stops working if moved to add-hook
+;; TODO: apply only to org-mode
+(setq prelude-whitespace nil)
+(add-hook 'org-mode-hook (lambda()
+                           (visual-line-mode)
+                           ))
