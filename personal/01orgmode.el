@@ -2,6 +2,8 @@
 (setq org-agenda-skip-unavailable-files t)
 (setq org-agenda-files (list "~/Org/Personal"
                              "~/Org/Personal/Pracownia"
+                             "~/Org/Personal/Czytelnia"
+                             "~/Org/Personal/Szkolenia"
                              "~/Org/Work"))
 ;; todo keywords
 (setq org-todo-keywords
